@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAddEvent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/con"
+                android:text="Context"
+                android:textSize="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/conText"
+                android:layout_toRightOf="@+id/con"
+                android:layout_alignTop="@+id/con"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the context here" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conText"
+                android:id="@+id/title"
+                android:text="Title"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/titleText"
+                android:layout_toRightOf="@+id/title"
+                android:layout_alignTop="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_alignStart="@+id/conText"
+                android:inputType="textCapWords"
+                android:hint="Enter the Title here" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:id="@+id/tag"
+                android:text="Tag"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/tagText"
+                android:layout_below="@id/title"
+                android:layout_toRightOf="@+id/date"
+                android:layout_alignStart="@id/conText"
+                android:layout_marginTop="50dp"
+                android:hint="Enter the Tag here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag"
+                android:id="@+id/date"
+                android:text="Date"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/dateText"
+                android:layout_below="@id/tag"
+                android:layout_toRightOf="@+id/date"
+                android:layout_alignStart="@id/conText"
+                android:layout_marginTop="50dp"
+                android:hint="dd/mm/yyyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img"
+                android:layout_below="@+id/date"
+                android:text="Image"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="30dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_add_a_photo_black_24dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submit"
+                style="@style/Widget.MaterialComponents.Button"
+                android:textSize="25dp"
+                android:layout_below="@+id/imgView"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="70dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
